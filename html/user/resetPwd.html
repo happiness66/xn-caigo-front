@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+<meta itemprop="name" content="菜狗商城"/>
+<meta itemprop="description" name="description" content=""/>
+<meta itemprop="image" content="/static/images/logo.png"/>
+<link rel="shortcut icon" type="image/ico" href="/static/images/favicon.ico">
+    <title>修改登录密码</title>
+
+    <link rel="stylesheet" href="/static/css/base_acc3011.css" />
+</head>
+<body class="bg_f5">
+<div class="m20">
+    <div class="mt10 bg_fff login_input b_e6_tb b_e6_lr">
+        <div class="wp100 b_e6_b p_r">
+            <div class="l_icon tc"><img class="va-m" src="/static/images/p-icon.png"/></div>
+            <input placeholder="输入原密码" type="password" id="origPassword"/>
+            <span class="warning">密码不能为空</span>
+            <span class="warning">密码格式错误</span>
+            <div class="register_verifycon">
+                <p>密码长度6~16位，可以是数字、字母和任意字符</p>
+            </div>
+        </div>
+        <div class="wp100 b_e6_b p_r">
+            <div class="l_icon tc"><img class="va-m" src="/static/images/p-icon.png"/></div>
+            <input placeholder="输入新密码" type="password" id="password"/>
+            <span class="warning">密码不能为空</span>
+            <span class="warning">密码格式错误</span>
+            <div class="register_verifycon">
+                <p>密码长度6~16位，可以是数字、字母和任意字符</p>
+            </div>
+        </div>
+        <div class="wp100 p_r">
+            <div class="l_icon tc"><img class="va-m" src="/static/images/p-icon.png"/></div>
+            <input placeholder="再次输入新密码" type="password" id="repassword"/>
+            <span class="warning">密码不能为空</span>
+            <span class="warning">两次密码输入不一致</span>
+            <div class="register_verifycon">
+                <p>密码长度6~16位，可以是数字、字母和任意字符</p>
+            </div>
+        </div>
+    </div>
+    <div class="mt30">
+        <div class="wp100">
+            <input type="button" class="lh3_5rem wp100 bg_f64444 t_white b_radius4 s_13" value="设置" id="sbtn"/>
+        </div>
+    </div>
+</div>
+<!-- <script src="../js/require.js"></script>
+<script src="../js/lib/jquery-2.1.4.js"></script> -->
+
+<script data-loader src="/static/js/require_906a8bc.js"></script>
+<script data-loader src="/static/js/lib/jquery-2.1.4_179591e.js"></script>
+<script type="text/javascript">/*resourcemap*/
+require.config({paths:{
+  "js/app/util/common": "/static/js/app/util/common_e5d0fba",
+  "js/app/util/ajax": "/static/js/app/util/ajax_d4d56f1",
+  "js/app/util/dialog": "/static/js/app/util/dialog_fdd0bb1",
+  "js/app/module/loading/loading": "/static/js/app/module/loading/loading_626b3e8",
+  "js/app/controller/base": "/static/js/app/controller/base_be4ff9d",
+  "js/app/controller/ResetPwd": "/static/js/app/controller/ResetPwd_bb1be58"
+}});</script>
+<script type="text/javascript" src="/static/html/config_9185a2e.js"></script>
+<script>
+    require(['js/app/controller/ResetPwd']);
+</script>
+</body>
+</html>

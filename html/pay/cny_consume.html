@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+<meta itemprop="name" content="菜狗商城"/>
+<meta itemprop="description" name="description" content=""/>
+<meta itemprop="image" content="/static/images/logo.png"/>
+<link rel="shortcut icon" type="image/ico" href="/static/images/favicon.ico">
+    <title>人民币+抵金券埋单</title>
+
+    <link rel="stylesheet" href="/static/css/base_acc3011.css" />
+</head>
+
+<body class="bg_f5">
+    <div class="s_12 t_bold b_bd_b p10 bg_fff" id="name"></div>
+    <div class="am-list-item am-input-item">
+        <div class="am-input-label am-input-label-5">消费总金额</div>
+        <div class="am-input-control"><input id="rmbAmount"  type="number" value="" placeholder="询问服务员后输入"></div>
+    </div>
+    <div class="am-list-item am-input-item">
+        <div class="am-input-label am-input-label-5 mr6">参与优惠金额</div>
+        <div class="am-input-control"><input id="TreatAmount"  type="number" value="" placeholder="询问服务员后输入"></div>
+    </div>
+    <div class="am-list-item am-input-item">
+        <div class="am-input-label am-input-label-5">需支付RMB</div>
+        <div class="am-input-control"><input id="needAmount" type="text" value="0" readonly></div>
+    </div>
+    <div class="am-list-item am-input-item">
+        <div class="am-input-label am-input-label-5">需支付抵金券</div>
+        <div class="am-input-control"><input id="jfAmount" type="text" value="0" readonly></div>
+    </div>
+    <div class="pay-small-item b-t-ed" style="
+        margin-top: -2px;
+        color: #f64444;
+    ">抵金券余额：<span id="jfRemain"></span></div>
+    <div class="pay-small-item b-t-ed">支付方式</div>
+    <div id="content">
+        <div id="yeCont" class="pay-item mt0 active">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDI5NEM2RjYzNjA2MTFFNkFBQzQ5MjExNkI0OURGNzkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDI5NEM2RjczNjA2MTFFNkFBQzQ5MjExNkI0OURGNzkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4NEIzQ0Y5QjM1RTMxMUU2QUFDNDkyMTE2QjQ5REY3OSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4NEIzQ0Y5QzM1RTMxMUU2QUFDNDkyMTE2QjQ5REY3OSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmQuMvkAAAJNSURBVGje5Zq/S8NAFMfFv6C7Q6cOdu3mH9LVoUP/DaGD4qYOpcFJ6GRx6OAgbSAOggVBKMUhY3EyINZUW60975W7co1J8+NeeuE8+C7h7uU+vPfu99bo4GgLSbtUFapTKpNqQDWkemUasm8mq1NhbaT+SwhZSLbzRapDqj4VSag+s1FUAbJH1ZLofJBazHbqIDtUzRQAvGqyf6UCsk813gAE15j9ExWksUEArxoYINtslCGKZbK+JAbpZQCCq5cUpJMhCK5OXJB6BiG46lFByhmG4CqHgeQSGP2mmiuAya0Dacc0NlMEQVhffUFKCYzN3TODjJuXS0VtK7Z5Pz5JClPyA+kmMQYgYvm8vgltA3V4+XkbyXil6wXJy7h5encfq2NQh5c4XgxQXgSpyRiD0JhPppG8InpjNnzGyJWaCGLLGlzxyosTyRvu+QUGiM1BChijCHglLGREb3wNnjBHsAKAVLEMhoXNijfoIIEIUgUQA3N8D/KKCAlhiDynGABiYRr9uGr7eoUDwqAgMW8EyUJJdK8AQPSK6I2JeZvGLG8DiINtGDovJjUHk5z81skBEFfWkHeZAhJzZZkbD49/6iGBuCgg4hwSt2CCOBqAOCjJ7hdai/CiM7yY5H51MJPdSmvP4B29UtybWOgToiIQA2WJkoHQqqIsGjOQ7AWUZbxiEBttY6U4tGpoW13FyZ5HOXxQDNLFOg5SDVLCOqBTCdLGPjJVpdy/OMTW6lpBq4sera7etLoM1eZ6WrsHA1o94dDqUY12z5wy9/DsF3p4332g6rprAAAAAElFTkSuQmCC" class="pay-item-img" />
+            <div class="pl34">RMB余额支付(余额：<span id="rmbRemain"></span>)</div>
+            <div class="chose-icon circle-icon"></div>
+        </div>
+        <div id="wxCont" class="pay-item mt0">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAXCAMAAAAm/38fAAAAilBMVEUAAABUvhtUvhtUvhtUvhtUvhtUvhtUvhtUvhtUvhtUvhtUvhtUvhtUvhtUvhtUvhtUvhtUvhtUvhtUvhv////5/fbn99/O7b52y0eO1GjJ67et4JJhxC3w+uvr+OTh9Njc8tHC6K655KCC0FlZwSLz++/Y8Muo3ouh3INsxzvU78a/56mz4pqW13Nt5MrBAAAAE3RSTlMA+cgYc/TltpVYUEM7KBLjeHDXBTMMsQAAAO1JREFUKM99kukSgjAMhIsFEW8lvQAREG99/9dzbQs6jsP3I+1suoQ0ZR6+iVdBtI03nH2znASpJ5gsP/p8nH4xnnf6zB/vTTOnL6L0h2hhEyNsrw8pxOnS+syIgQQbI8gitc8kzqAFZRWRUrQregvHoogOZyLzJMq9hbMpoiDHvqnrs/valIWfRKbcUkAK2Roxc+dR4khC0g3S2jq0tdxRISdlUBAO1ACHIxI1dVzeNbitJeVeNH3C4K9c44VBaEuvy9a2nqQdemf18uo6h6WjyKuyOjVo/O/tatzuwDwGJjg0c8BDvJJgFYfcCy+bESFeGoeyYgAAAABJRU5ErkJggg==" class="pay-item-img" />
+            <div class="pl34">微信支付</div>
+            <div class="chose-icon circle-icon"></div>
+        </div>
+    </div>
+    <!-- <div class="pay-small-item b-t-ed">账户余额</div>
+    <div class="am-list-item am-input-item">
+        <div class="am-input-label am-input-label-5">RMB余额</div>
+        <div class="am-input-control"><input type="text" id="rmbRemain" value="0" readonly></div>
+    </div>
+    <div class="am-list-item am-input-item">
+        <div class="am-input-label am-input-label-5">抵金券余额</div>
+        <div class="am-input-control"><input type="text" id="jfRemain" value="0" readonly></div>
+    </div> -->
+
+    <footer class="fixft bg_fff b_bd_t s_14 tc lh3em">
+        <div class="wp60 fl tl pl10">消费总计:
+            <div class="t_f64444 va-m lh1_2em inline_block">
+                <div class="">¥<span id="totalAmount">0</span></div>
+            </div>
+        </div>
+        <div class="wp40 fl bg_f64444 t_white lh3_1em" id="sbtn">确认支付</div>
+    </footer>
+    <!-- <script src="../js/require.js"></script>
+<script src="../js/lib/jquery-2.1.4.js"></script> -->
+
+<script data-loader src="/static/js/require_906a8bc.js"></script>
+<script data-loader src="/static/js/lib/jquery-2.1.4_179591e.js"></script>
+<script type="text/javascript">/*resourcemap*/
+require.config({paths:{
+  "js/app/util/common": "/static/js/app/util/common_e5d0fba",
+  "js/app/util/ajax": "/static/js/app/util/ajax_d4d56f1",
+  "js/app/util/dialog": "/static/js/app/util/dialog_fdd0bb1",
+  "js/app/module/loading/loading": "/static/js/app/module/loading/loading_626b3e8",
+  "js/app/controller/base": "/static/js/app/controller/base_be4ff9d",
+  "js/app/controller/CnyConsume": "/static/js/app/controller/CnyConsume_025adaa"
+}});</script>
+<script type="text/javascript" src="/static/html/config_9185a2e.js"></script>
+<script>
+        require(['js/app/controller/CnyConsume']);
+    </script>
+</body>
+
+</html>

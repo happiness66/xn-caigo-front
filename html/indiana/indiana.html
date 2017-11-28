@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <!--<link rel="import" href="../head.html?__inline">-->
+    <title>一元夺宝</title>
+    <meta charset="UTF-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+<meta itemprop="name" content="菜狗商城"/>
+<meta itemprop="description" name="description" content=""/>
+<meta itemprop="image" content="/static/images/logo.png"/>
+<link rel="shortcut icon" type="image/ico" href="/static/images/favicon.ico">
+
+    
+
+    <link rel="stylesheet" href="/static/css/reset_ef34024.css" />
+    <link rel="stylesheet" href="/static/css/shake_8e51791.css" />
+    <style>
+        body {
+            background-color: #F5F5F5;
+        }
+        .wrapDiv{
+            width: 1.55rem;
+            height: 10px;
+            margin-left: 0.1rem;
+            position: absolute;
+            left:0.8rem;
+            top: 5px;
+            background-color: #e6e6e6;
+            border-radius: 0.1rem;
+            overflow: hidden;
+        }
+        .wrapDiv div{
+            /*width: 100%;*/
+            height: 10px;
+            background-color:limegreen;
+        }
+
+        .icon-loading {
+            background: url(/static/images/loading.gif) 50% 56% no-repeat;
+            width: 100%;
+            display: block;
+            position: fixed;
+            top: -62px;
+            height: 100%;
+            left: 0;
+            background-color: #fff;
+            z-index: 999;
+        }
+		
+		.bg_1 .wrapDiv div{
+            background-color: #fb9f18 !important;}
+		.bg_2 .wrapDiv div{
+            background-color: #e9c905 !important;}
+		.bg_3 .wrapDiv div{
+            background-color: #10c060 !important;}
+    </style>
+</head>
+<body>
+<i id="cont" class="icon-loading"></i>
+<div class="indianaRecord">
+    <div class="indianaList">
+        <div class="img"><img src="/static/images/分秒-实况.png" alt=""></div>
+        <div class="record">
+            <div class="record_1">
+            </div>
+            <div class="record_2"></div>
+        </div>
+
+    </div>
+
+    <ul class="indianaDetail">
+
+    </ul>
+</div>
+
+<!-- <footer class="indiana-tabs">
+
+    <a href="../consume/consume.html">
+        <div><img src="../../images/hf3.png"/></div>
+        <p>商家消费</p>
+    </a>
+    <a href="../detail/mall_index.html">
+        <div><img src="../../images/hf2.png"/></div>
+        <p class="ptb2">商城兑换</p>
+    </a>
+    <a href="../index.html">
+        <div><img src="../../images/摇一摇－灰色.png"/></div>
+        <p class="ptb2">摇钱树</p>
+    </a>
+    <a class="active" href="../indiana/indiana.html">
+        <div><img src="../../images/小目标.png"/></div>
+        <p class="ptb2">一元夺宝</p>
+    </a>
+
+    <a href="../user/user_info.html">
+        <div><img src="../../images/hf4.png"/></div>
+        <p class="ptb2">我的</p>
+    </a>
+</footer> -->
+<!-- <script src="../js/require.js"></script>
+<script src="../js/lib/jquery-2.1.4.js"></script> -->
+
+
+<script data-loader src="/static/js/require_906a8bc.js"></script>
+<script data-loader src="/static/js/lib/jquery-2.1.4_179591e.js"></script>
+<script type="text/javascript">/*resourcemap*/
+require.config({paths:{
+  "js/app/util/common": "/static/js/app/util/common_e5d0fba",
+  "js/app/util/ajax": "/static/js/app/util/ajax_d4d56f1",
+  "js/app/util/dialog": "/static/js/app/util/dialog_fdd0bb1",
+  "js/app/module/loading/loading": "/static/js/app/module/loading/loading_626b3e8",
+  "js/app/controller/base": "/static/js/app/controller/base_be4ff9d",
+  "js/lib/iscroll": "/static/js/lib/iscroll_6538bed",
+  "js/app/controller/indiana/Indiana": "/static/js/app/controller/indiana/Indiana_b4944b8"
+}});</script>
+<script type="text/javascript" src="/static/html/config_9185a2e.js"></script>
+<script>
+    require(['js/app/controller/indiana/Indiana']);
+</script>
+</body>
+</html>

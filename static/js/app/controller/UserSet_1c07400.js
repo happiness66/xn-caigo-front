@@ -1,0 +1,1 @@
+define("js/app/controller/UserSet",["js/app/controller/base","js/app/util/ajax"],function(o){return o.isLogin()?void $("#loginOut").on("click",function(){$("#loaddingIcon").removeClass("hidden"),sessionStorage.setItem("user","0"),location.href="consume/consume.html"}):void o.goLogin()});

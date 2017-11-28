@@ -1,0 +1,1 @@
+var w=$(window).width();w>320&&(w=320),$("html,body").css("font-size",w/3.2+"px");

@@ -1,0 +1,1 @@
+define("js/app/controller/ConsumeSuccess",["js/app/controller/base","js/app/util/ajax","js/app/util/dialog","js/lib/handlebars.runtime-v3.0.3"],function(e,o,n){function t(){s?$("#money").text((+s/1e3).toFixed(2)+"元"):a("无法获取返现金额!")}function a(e){var o=n({content:e,quickClose:!0});o.show(),setTimeout(function(){o.close().remove()},2e3)}var s=e.getUrlParam("m")||"";t()});

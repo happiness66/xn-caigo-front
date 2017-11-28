@@ -1,0 +1,1 @@
+define("js/app/controller/user/AboutUs",["js/app/controller/base","js/app/util/ajax","js/app/module/loading/loading"],function(n,o,t){function a(){t.createLoading(),n.getSysConfig("807717","aboutus").then(function(o){o.success?($("#title").html(o.data.cvalue),$("#content").html(o.data.note)):n.showMsg(o.msg),t.hideLoading()},function(){n.showMsg("加载失败"),t.hideLoading()})}a()});

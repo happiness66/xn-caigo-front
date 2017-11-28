@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+<meta itemprop="name" content="菜狗商城"/>
+<meta itemprop="description" name="description" content=""/>
+<meta itemprop="image" content="/static/images/logo.png"/>
+<link rel="shortcut icon" type="image/ico" href="/static/images/favicon.ico">
+    <title>购买</title>
+
+    <link rel="stylesheet" href="/static/css/base_acc3011.css" />
+</head>
+
+<body class="bg_f5">
+    <i id="cont" class="icon-loading"></i>
+    <header>
+        <div class="swiper-container bg_fff">
+            <div class="swiper-wrapper buy-swiper-top" id="btlImgs" style="display: -webkit-box;display: -moz-box;">
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </header>
+    <div class="bg_fff plr20 ptb10">
+        <div class="pt10 overhide">
+            <p id="btr-name" class="t_323232 s_13"></p>
+            <p id="btr-slogan" class="t_666 s_10"></p>
+                <div class="pt15 pb10">
+                    <span id="discountPrice" class="t_red s_13"></span>
+                    <span id="cnySpan"><span id="cnyPrice" class="t_red s_13"></span></span>
+                </div>
+                <div class="t_666 ptb10">
+                    <span id="subCount" class="t_bold a_s_span tc"><img src="/static/images/sub-icon.png" style="width: 20px;"/></span>
+                    <input id="buyCount" class="tc w70p s_13 lh32" type="text" value="1" />
+                    <span id="addCount" class="t_bold a_s_span tc"><img src="/static/images/add-icon.png" style="width: 20px;"/></span>
+
+                </div>
+        </div>
+    </div>
+
+    <div id="btr-description" class="s_12 plr20 mt20 bg_fff ptb20 overwrap"></div>
+    
+    <div id="productSpecs" class="s_12 mt20 bg_fff productSpecs_wrap hidden over-hide">
+    </div>
+    
+    <a class="buy-cart-icon" href="../user/cart.html"><i></i><div class="infoIcon hidden"></div></a>
+    <div style="height: 90px;"></div>
+    <footer class="fixft bg_fff b_bd_t s_14  tc">
+        <div class="fl wp40 t_red bg_fff" id="totalNum">
+            <p  style="height: 55px">
+            	<span style="height: 30px;line-height: 30px"  class="CGB"></span><br>
+            	<span style="height: 25px"  class="JF"></span>
+            </p>
+        </div>
+        <div class="fl wp30 t_white bg_faa756 lh3_1em" id="addCartBtn">加入购物车</div>
+        <a class="fl wp30 t_white bg_ff0000 lh3_1em" id="buyBtn">立即购买</a>
+    </footer>
+    <!-- <script src="../js/require.js"></script>
+<script src="../js/lib/jquery-2.1.4.js"></script> -->
+
+<script data-loader src="/static/js/require_906a8bc.js"></script>
+<script data-loader src="/static/js/lib/jquery-2.1.4_179591e.js"></script>
+<script type="text/javascript">/*resourcemap*/
+require.config({paths:{
+  "js/app/util/common": "/static/js/app/util/common_e5d0fba",
+  "js/app/util/ajax": "/static/js/app/util/ajax_d4d56f1",
+  "js/app/util/dialog": "/static/js/app/util/dialog_fdd0bb1",
+  "js/app/module/loading/loading": "/static/js/app/module/loading/loading_626b3e8",
+  "js/app/controller/base": "/static/js/app/controller/base_be4ff9d",
+  "js/lib/swiper-3.3.1.jquery.min": "/static/js/lib/swiper-3.3.1.jquery.min_1bab565",
+  "js/app/controller/operator/Buy": "/static/js/app/controller/operator/Buy_a2516ea"
+}});</script>
+<script type="text/javascript" src="/static/html/config_9185a2e.js"></script>
+<script>
+        require(['js/app/controller/operator/Buy']);
+    </script>
+</body>
+
+</html>

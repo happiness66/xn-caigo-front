@@ -1,0 +1,1 @@
+define("js/app/controller/AfterService",["js/app/controller/base","js/app/util/ajax","js/lib/handlebars.runtime-v3.0.3"],function(){$(function(){function n(){t()}function t(){$("#ol-ul").on("click","li .th_btn",function(){return location.href="./refund.html",!1})}n()})});

@@ -1,0 +1,1 @@
+var APIURL="/api",SYSTEM_USERID="SYS_USER_CAIGO",SYSTEM_CODE="CD-CCG000007",COMPANYCODE="CD-CCG000007",SHAKEURL="http://cm.tour.hichengdai.com",PIC_PREFIX="http://oondlttcb.bkt.clouddn.com/";

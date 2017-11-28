@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+<meta itemprop="name" content="菜狗商城"/>
+<meta itemprop="description" name="description" content=""/>
+<meta itemprop="image" content="/static/images/logo.png"/>
+<link rel="shortcut icon" type="image/ico" href="/static/images/favicon.ico">
+    <title>推广活动</title>
+
+    <link rel="stylesheet" href="/static/css/base_acc3011.css" />
+</head>
+
+<body class="bg_f5">
+<i id="cont" class="icon-loading"></i>
+
+<!--轮播-->
+    <header>
+        <div id="swiper-container" class="swiper-container">
+            <div id="top-swiper" class="swiper-wrapper" style="display: -webkit-box;display: -moz-box;"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </header>
+<!--详情-->
+	
+    <div id="md-div" class="wp100 md-div bg_fff">
+        <ul id="contUl" class="b_bd_b mh50p">
+            <!-- <li class="scroll-loadding"></li> -->
+        </ul>
+    </div>
+
+     <div class="detail-chose-dialog hidden" id="choseDialog">
+            <div class="am-modal-mask"></div>
+            <div class="am-modal-wrap">
+                <div role="document" class="am-modal am-modal1 am-modal-operation am-modal-transparent">
+                    <div class="am-modal-content">
+                        <div class="am-modal-body" style="padding: 10px;">
+                            <div class="am-modal-currentUser clearfix">
+                                <div class="wp39p pt4 inline_block fl "><img src="/static/images/zuo@2x.png" /></div>
+                                <div class="am-modal-currentUser-content fl pt14 pb20 s_11"></div>
+                                <div class="wp39p pt8 fl inline_block"><img src="/static/images/you@2x.png" /></div>
+                            </div>
+                            <div class="am-modal-list tl ptb4">
+                                <ul></ul>
+                            </div>
+                        </div>
+                        <div class="am-modal-footer">
+                            <div class="am-modal-button-group-v ">
+                                <a class="am-modal-button1 tc t_white bg_f64444" id="confirm" href="javascript:void(0)">我知道了</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+
+    <!-- <div class="mlr10 bg_fff mt10 hcont" id="allItems"></div> -->
+
+    <!-- <div style="height: 88px;"></div> -->
+
+    <!-- <script src="../js/require.js"></script>
+<script src="../js/lib/jquery-2.1.4.js"></script> -->
+
+<script data-loader src="/static/js/require_906a8bc.js"></script>
+<script data-loader src="/static/js/lib/jquery-2.1.4_179591e.js"></script>
+<script type="text/javascript">/*resourcemap*/
+require.config({paths:{
+  "js/app/util/common": "/static/js/app/util/common_e5d0fba",
+  "js/app/util/ajax": "/static/js/app/util/ajax_d4d56f1",
+  "js/app/util/dialog": "/static/js/app/util/dialog_fdd0bb1",
+  "js/app/module/loading/loading": "/static/js/app/module/loading/loading_626b3e8",
+  "js/app/controller/base": "/static/js/app/controller/base_be4ff9d",
+  "js/app/util/dict": "/static/js/app/util/dict_f4fe1bc",
+  "js/lib/swiper-3.3.1.jquery.min": "/static/js/lib/swiper-3.3.1.jquery.min_1bab565",
+  "js/app/module/loadImg/loadImg": "/static/js/app/module/loadImg/loadImg_4c8f56d",
+  "js/app/controller/activity/PromotionList": "/static/js/app/controller/activity/PromotionList_41d61c5"
+}});</script>
+<script type="text/javascript" src="/static/html/config_9185a2e.js"></script>
+<script>
+        require(['js/app/controller/activity/PromotionList']);
+    </script>
+</body>
+
+</html>

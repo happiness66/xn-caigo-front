@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+<meta itemprop="name" content="菜狗商城"/>
+<meta itemprop="description" name="description" content=""/>
+<meta itemprop="image" content="/static/images/logo.png"/>
+<link rel="shortcut icon" type="image/ico" href="/static/images/favicon.ico">
+    <title>活动详情</title>
+    
+
+    <link rel="stylesheet" href="/static/css/base_acc3011.css" />
+    <style type="text/css">
+    .content {
+      position: absolute;
+      top: 12rem;
+      left: 30%;
+      text-align: center;
+      color: #fff;
+      line-height: 1.5;
+      font-size: 1.6rem;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 2rem;
+      right: 4rem;
+      width: 10rem;
+    }        
+    </style>
+</head>
+
+<body class="bg_fff">
+    <div id="description" class="p10 bg_fff"></div>
+    <i id="cont" class="icon-loading"></i>
+    <i id="loaddingIcon" class="icon-loading bg_transparent hidden top_0"></i>
+    <div class="am-modal-mask hidden" id="shareMask">
+      <img src="/static/images/arrow.png" class="arrow">
+      <div class="content">
+        <p>请点击右上角</p>
+        <p>发送给指定朋友</p>
+        <p>或分享到朋友圈</p>
+      </div>
+    </div>
+    <div class="am-modal-mask hidden" id="shareMask1"></div>
+    <button class=" t_white lh2em fixft activityShareBtn bg_999" id="sbtn" disabled="disabled">阅读完成后分享为有效分享</button>
+    <div style="height: 106px;"></div>
+    <!-- <script src="../js/require.js"></script>
+<script src="../js/lib/jquery-2.1.4.js"></script> -->
+
+<script data-loader src="/static/js/require_906a8bc.js"></script>
+<script data-loader src="/static/js/lib/jquery-2.1.4_179591e.js"></script>
+<script type="text/javascript">/*resourcemap*/
+require.config({paths:{
+  "js/app/util/common": "/static/js/app/util/common_e5d0fba",
+  "js/app/util/ajax": "/static/js/app/util/ajax_d4d56f1",
+  "js/app/util/dialog": "/static/js/app/util/dialog_fdd0bb1",
+  "js/app/module/loading/loading": "/static/js/app/module/loading/loading_626b3e8",
+  "js/app/controller/base": "/static/js/app/controller/base_be4ff9d",
+  "js/lib/swiper-3.3.1.jquery.min": "/static/js/lib/swiper-3.3.1.jquery.min_1bab565",
+  "js/lib/jweixin-1.0.0": "/static/js/lib/jweixin-1.0.0_05fb89c",
+  "js/app/controller/activity/AdvertisingPage": "/static/js/app/controller/activity/AdvertisingPage_1714d57"
+}});</script>
+<script type="text/javascript" src="/static/html/config_9185a2e.js"></script>
+<script>
+        require(['js/app/controller/activity/AdvertisingPage']);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+define("js/app/controller/Recharge",["js/app/controller/base","js/app/util/dialog"],function(n,o){$(function(){function n(){o()}function o(){}n()})});

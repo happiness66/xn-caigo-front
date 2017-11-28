@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+<meta itemprop="name" content="菜狗商城"/>
+<meta itemprop="description" name="description" content=""/>
+<meta itemprop="image" content="/static/images/logo.png"/>
+<link rel="shortcut icon" type="image/ico" href="/static/images/favicon.ico">
+    <title>分类列表</title>
+
+    <link rel="stylesheet" href="/static/css/base_acc3011.css" />
+</head>
+
+<body class="bg_f5">
+
+    <div class="wp100 p_fixed zIndex900">
+        <div class="wp100 plr20 bg_f64444 ptb4 clearfix">
+            <div class="wp100 bg_f64444 ptb10">
+                <div class="wp100 br_4p clearfix p_r">
+                    <input id="searchInput" placeholder="输入商户名" class="search-input bg_fff" type="text" />
+                </div>
+            </div>
+        </div>
+        <div class="plr20 bg_efdade s_10" style="line-height: 36px;">
+            <div class="inline_block" id="lTypes">
+                <span class="va-m inline_block"></span>
+                <img src="/static/images/c-down.png" class="va-m wp16p" />
+            </div>
+            <div class="consume-list-top-line"></div>
+            <div class="inline_block" id="lAreas">
+                <span class="va-m inline_block">全部</span>
+                <img src="/static/images/c-down.png" class="va-m wp16p" />
+            </div>
+        </div>
+    </div>
+    <div id="mask" class="mask hidden"></div>
+    <div class="bg_fff wp100 clist_div hidden" id="cListDiv">
+        <ul class="wp100 consume_ul1" id="consumeUl"></ul>
+    </div>
+    <div class="bg_fff wp100 clist_div hidden" id="cAreaDiv">
+        <ul class="wp100 consume_ul1" id="consumeAreaUl">
+        </ul>
+    </div>
+    <div style="height:130px;"></div>
+    <div class="plr20 wp100 cons-list">
+        <ul class="wp100 bg_fff s_11 br_4p mt8 b_bd hidden" id="searchUl"></ul>
+    </div>
+
+    <div class="consume-cont bg_fff">
+        <ul id="consume-ul" class="consume-ul"></ul>
+    </div>
+    <div style="height: 106px;"></div>
+    <footer class="fixft bg_fff b_bd_t hfoot s_11">
+        <a href="./consume.html" class="wp33 fl tc active">
+            <div class="wp100 pt8"><img src="/static/images/hf3@2x.png" /></div>
+            <p class="ptb2">商家消费</p>
+        </a>
+         <a href="../detail/mall_index.html" class="wp33 fl tc">
+            <div class="wp100 pt8"><img src="/static/images/hf2.png" /></div>
+            <p class="ptb2">商城兑换</p>
+        </a>
+        <!-- <a href="../index.html" class="wp33 fl tc">
+            <div class="wp100 pt8"><img src="../../images/摇一摇－灰色.png" /></div>
+            <p class="ptb2">摇钱树</p>
+        </a>
+        <a href="../indiana/indiana.html" class="wp33 fl tc">
+            <div class="wp100 pt8"><img src="../../images/小目标未点击.png" /></div>
+            <p class="ptb2">一元夺宝</p>
+        </a> -->
+        <a href="../user/user_info.html" class="wp33 fl tc">
+            <div class="wp100 pt8"><img src="/static/images/hf4.png" /></div>
+            <p class="ptb2">我的</p>
+        </a>
+    </footer>
+    <!-- <script src="../js/require.js"></script>
+<script src="../js/lib/jquery-2.1.4.js"></script> -->
+
+<script data-loader src="/static/js/require_906a8bc.js"></script>
+<script data-loader src="/static/js/lib/jquery-2.1.4_179591e.js"></script>
+<script type="text/javascript">/*resourcemap*/
+require.config({paths:{
+  "js/app/util/common": "/static/js/app/util/common_e5d0fba",
+  "js/app/util/ajax": "/static/js/app/util/ajax_d4d56f1",
+  "js/app/util/dialog": "/static/js/app/util/dialog_fdd0bb1",
+  "js/app/module/loading/loading": "/static/js/app/module/loading/loading_626b3e8",
+  "js/app/controller/base": "/static/js/app/controller/base_be4ff9d",
+  "js/app/controller/List": "/static/js/app/controller/List_0dedb29"
+}});</script>
+<script type="text/javascript" src="/static/html/config_9185a2e.js"></script>
+<script>
+        require(['js/app/controller/List']);
+    </script>
+</body>
+
+</html>

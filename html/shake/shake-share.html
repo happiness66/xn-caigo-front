@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>摇钱树分享</title>
+    <meta charset="UTF-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+<meta itemprop="name" content="菜狗商城"/>
+<meta itemprop="description" name="description" content=""/>
+<meta itemprop="image" content="/static/images/logo.png"/>
+<link rel="shortcut icon" type="image/ico" href="/static/images/favicon.ico">	<!--<script>
+		(function(doc, win) {
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+				recalc = function() {
+					var clientWidth = docEl.clientWidth;
+					if (!clientWidth) return;
+					if (clientWidth < 750)
+						docEl.style.fontSize = clientWidth / 7.5 + 'px';
+					else
+						docEl.style.fontSize = '100px';
+				};
+			if (!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false)
+
+		})(document, window);
+		var APIURL = "/api";
+		var SYSTEM_CODE = "CD-CCG000007";
+	</script>-->
+
+    <link rel="stylesheet" href="/static/css/reset_ef34024.css" />
+    <link rel="stylesheet" href="/static/css/shake_8e51791.css" />
+</head>
+
+<body class="bg_fff over-hide" style="width: 100%;">
+	<div id="logo" class="hidden"><img src="/static/images/logo2.png"/></div>
+	<div class="wp100 b_bd_b over-hide p3_2r bg_fff" data-code="1">
+		<div class="fl s_12 c_48 fs25r"><span class="c_fe4332 fs25 hasName"></span>的摇钱树</div>
+		<div class="fr c_48 fs25r"><img class="h35r pr6r" src="/static/images/距离.png"><span class="distance"></span></div>
+	</div>
+	<div class="wp100 tc shareWrap">
+		<div class="tc" id="code"></div>
+		<div class="t_999 fs26r tc">扫码，和我一起玩摇钱树</div>
+		<!-- <input type="button" id="shareBtn" value="分享领奖" class="shareBtn" /> -->
+		<div class="mt30 t_f64444 fs25r m10r plr5r">点击微信右上角分享按钮，分享当前页面后，领取奖品</div>
+	</div>
+	<div class='wp100 hp100 pat0 bg_0_8 z_index9999' id='shakeAfterSta1'>
+		<div class='wp100'><img src='/static/images/中奖.png' />
+			<!--<p class='c_fe4332 fs30r pt40_b20r'>喜中汇赚宝</p>-->
+			<p class='c_fe4332 fs30r pt40_b20r' id="yyAmount"></p>
+		</div>
+	</div>
+	<!-- <script src="../js/require.js"></script>
+<script src="../js/lib/jquery-2.1.4.js"></script> -->
+<script data-loader src="/static/js/require_906a8bc.js"></script>
+<script data-loader src="/static/js/lib/jquery-2.1.4_179591e.js"></script>
+<script type="text/javascript">/*resourcemap*/
+require.config({paths:{
+  "js/app/util/common": "/static/js/app/util/common_e5d0fba",
+  "js/app/util/ajax": "/static/js/app/util/ajax_d4d56f1",
+  "js/app/util/dialog": "/static/js/app/util/dialog_fdd0bb1",
+  "js/app/module/loading/loading": "/static/js/app/module/loading/loading_626b3e8",
+  "js/app/controller/base": "/static/js/app/controller/base_be4ff9d",
+  "js/lib/jweixin-1.0.0": "/static/js/lib/jweixin-1.0.0_05fb89c",
+  "js/lib/fingerprint2": "/static/js/lib/fingerprint2_614c91c",
+  "js/app/controller/ShakeShare": "/static/js/app/controller/ShakeShare_23c85b4"
+}});</script>
+<script type="text/javascript" src="/static/html/config_9185a2e.js"></script>
+<script src="/static/js/lib/jquery.qrcode.min_8c0b79c.js"></script>
+<script>
+		require(['js/app/controller/ShakeShare']);
+	</script>
+</body>
+
+</html>
